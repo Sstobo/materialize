@@ -1,0 +1,45 @@
+.hero-page {
+    background-color: rgb(241, 241, 241);
+    height: 600px;
+    margin-left: 6%;
+}
+.hero-text-block {
+    background-color: white;
+    max-width: 700px;
+    margin-right: 10%;
+    height: 500px;
+    min-width: 340px;
+    padding: 1%;
+}
+.hero-text {
+    font-size: 18px;
+    max-width: 600px;
+    line-height: 40px;
+}
+.services-container {
+    height: 200px;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    justify-content: center;
+    margin-left: 6%;
+}
+.services-wrapper {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.services-text-block {
+    background-color: rgb(241, 241, 241);
+    max-width: 500px;
+    margin-right: 7%;
+    height: 200px;
+    min-width: 340px;
+    padding: 1%;
+}
+.services-icons {
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    
+    margin-left: 6%;
+}
