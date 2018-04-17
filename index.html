@@ -4,11 +4,14 @@
 <head>
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="/main/Desktop/materializetest/styles.css" rel="stylesheet">
   <!--Import materialize.css-->
   <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/> -->
 
   <!-- COPIED FROM CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <!-- Beta version not displaying carosel  -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
 
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,19 +21,39 @@
 <body>
 
 
-
-
-  <div class="container" >
+  <div class="container">
     <nav>
-        <div class="nav-wrapper white black-text">
-          <a href="#!" class="brand-logo black-text">toBeNamed</a>
-          <ul class="right hide-on-med-and-down">
-            <li><a class="waves-effect waves-black btn-flat">About Us</a></li>
-            <li><a class="waves-effect waves-black btn-flat">Our Portfolio </a></li>
-            <li><a class="waves-effect waves-black btn-flat">Contact Us</a></li>
-          </ul>
-        </div>
-      </nav>
+      <div class="nav-wrapper white black-text">
+        <a href="#!" class="brand-logo black-text">toBeNamed</a>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a class="waves-effect waves-black btn-flat">About Us</a>
+          </li>
+          <li>
+            <a class="waves-effect waves-black btn-flat">Our Portfolio </a>
+          </li>
+          <li>
+            <a class="waves-effect waves-black btn-flat">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <h3 class="meet-the-gang">Meet the Gang!</h3>
+    <div class="carousel">
+      <a href="#one!" class="carousel-item">
+        <img src="./inglorious_colin.jpg" alt="">
+      </a>
+      <a href="#two!" class="carousel-item">
+        <img src="./rocknrollstobo.jpg" alt="">
+      </a>
+      <a href="#three!" class="carousel-item">
+        <img src="./stark_stark.jpg" alt="">
+      </a>
+      <a href="#four!" class="carousel-item">
+        <img src="./tom_hardy_as_scott_livingstone.jpg" alt="">
+      </a>
+    </div>
 
 
   </div>
@@ -51,7 +74,29 @@
   <!-- COPIED FROM CDN -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Init Carousel
+      $('.carousel').carousel();
 
+      // Init Carousel Slider
+      $('.carousel.carousel-slider').carousel({
+        fullWidth: true
+      });
+
+      // Init Slider
+      $('.slider').slider();
+
+      // Init Modal
+      $('.modal').modal();
+
+      // Init Sidenav
+      $('.button-collapse').sideNav();
+    });
+  </script>
 </body>
 
 </html>
