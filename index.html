@@ -15,6 +15,7 @@
 
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css">
   <title>Materialize Sandbox</title>
 </head>
 
@@ -22,81 +23,148 @@
 
 
   <div class="container">
-    <nav>
-      <div class="nav-wrapper white black-text">
-        <a href="#!" class="brand-logo black-text">toBeNamed</a>
-        <ul class="right hide-on-med-and-down">
+
+
+
+
+    <div>
+      <nav>
+        <div class="nav-wrapper white black-text" style="padding-left: 2%; padding-right: 2%">
+          <a href="#!" class="brand-logo black-text">toBeNamed</a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a class="waves-effect waves-black btn-flat">About Us</a>
+            </li>
+            <li>
+              <a class="waves-effect waves-black btn-flat">Our Portfolio </a>
+            </li>
+            <li>
+              <a class="waves-effect waves-black btn-flat">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <h3 class="meet-the-gang">Meet the Gang!</h3>
+      <div class="carousel">
+        <a href="#one!" class="carousel-item">
+          <img src="./inglorious_colin.jpg" alt="">
+        </a>
+        <a href="#two!" class="carousel-item">
+          <img src="./rocknrollstobo.jpg" alt="">
+        </a>
+        <a href="#three!" class="carousel-item">
+          <img src="./stark_stark.jpg" alt="">
+        </a>
+        <a href="#four!" class="carousel-item">
+          <img src="./tom_hardy_as_scott_livingstone.jpg" alt="">
+        </a>
+      </div>
+      <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red">
+          <i class="large material-icons">more</i>
+        </a>
+        <ul>
           <li>
-            <a class="waves-effect waves-black btn-flat">About Us</a>
+            <a class="btn-floating red">
+              <i class="material-icons">portrait</i>
+            </a>
           </li>
           <li>
-            <a class="waves-effect waves-black btn-flat">Our Portfolio </a>
+            <a class="btn-floating red darken-1">
+              <i class="material-icons">email</i>
+            </a>
           </li>
           <li>
-            <a class="waves-effect waves-black btn-flat">Contact Us</a>
+            <a class="btn-floating red darken-2">
+              <i class="material-icons">photo_library</i>
+            </a>
+          </li>
+          <li>
+            <a class="btn-floating red darken-3">
+              <i class="material-icons">trending_up</i>
+            </a>
           </li>
         </ul>
       </div>
-    </nav>
+      <div style="padding-left: 2%">
+        <div style="height: 500px" class="valign-wrapper ">
+          <h1 style="max-width: 500px">Simple, powerful & efficient web pages.</h1>
+        </div>
 
-    <h3 class="meet-the-gang">Meet the Gang!</h3>
-    <div class="carousel">
-      <a href="#one!" class="carousel-item">
-        <img src="./inglorious_colin.jpg" alt="">
-      </a>
-      <a href="#two!" class="carousel-item">
-        <img src="./rocknrollstobo.jpg" alt="">
-      </a>
-      <a href="#three!" class="carousel-item">
-        <img src="./stark_stark.jpg" alt="">
-      </a>
-      <a href="#four!" class="carousel-item">
-        <img src="./tom_hardy_as_scott_livingstone.jpg" alt="">
-      </a>
+        <div style="position: relative; bottom: 100px; height: 400px">
+          <p style="max-width: 500px"> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+            recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+      </div>
+
+      <div class="hero-page">
+        <div class="container hero-text-block right card-panel">
+          <p class="hero-text"> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+            recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+      </div>
+      <div class="services-container">
+        <div class="services-wrapper">
+          <div class="container services-text-block left">
+            <h2 style="width: 600px">Services</h2>
+          </div>
+          <div class="container services-text-block right">
+            <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+              unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+              and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container services-icons">
+
+
+      </div>
     </div>
 
 
-  </div>
 
 
 
 
 
-  <div style="height: 500px"></div>
+    <div style="height: 500px"></div>
 
 
 
 
 
 
-  <!--JavaScript at end of body for optimized loading-->
-  <!-- <script type=" text/javascript " src="js/materialize.min.js "></script> -->
-  <!-- COPIED FROM CDN -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-  <!--Import jQuery before materialize.js-->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      // Init Carousel
-      $('.carousel').carousel();
+    <!--JavaScript at end of body for optimized loading-->
+    <!-- <script type=" text/javascript " src="js/materialize.min.js "></script> -->
+    <!-- COPIED FROM CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Init Carousel
+        $('.carousel').carousel();
 
-      // Init Carousel Slider
-      $('.carousel.carousel-slider').carousel({
-        fullWidth: true
+        // Init Carousel Slider
+        $('.carousel.carousel-slider').carousel({
+          fullWidth: true
+        });
+
+        // Init Slider
+        $('.slider').slider();
+
+        // Init Modal
+        $('.modal').modal();
+
+        // Init Sidenav
+        $('.button-collapse').sideNav();
       });
-
-      // Init Slider
-      $('.slider').slider();
-
-      // Init Modal
-      $('.modal').modal();
-
-      // Init Sidenav
-      $('.button-collapse').sideNav();
-    });
-  </script>
+    </script>
 </body>
 
 </html>
